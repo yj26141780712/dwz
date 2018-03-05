@@ -1,0 +1,52 @@
+<script type="text/javascript">
+    (function () {
+        console.log($);
+        $(".dwz-datagird").datagird({
+            url: "json/table.json",
+            columns: [
+                [
+                  {  
+                    field: "Index",
+                    title: "序號",
+                    rowspan:"2",
+                  },{
+                    field: "",
+                    title: "棧板",
+                    colspan:"6",
+                  },{
+                    field:"Item1",
+                    title:"項目1",
+                    rowspan:"2",   
+                  },{
+                    field:"Item2",
+                    title:"項目2",
+                    rowspan:"2",   
+                  }
+                ],[
+                    {
+                       field:"palletNoRange",
+                       title:"棧板號"  
+                    },{
+                        field:"palletQty",
+                        title:"Qty"
+                    },{
+                        field:"Length",
+                        title:"L"
+                    },{
+                        field:"Width",
+                        title:"W"
+                    },{
+                        field:"Height",
+                        title:"H"
+                    },{
+                        field:"PalletWeight",
+                        title:""
+                    }
+                ]
+            ]
+        });
+    })();
+</script>
+<table class="dwz-datagird">
+
+</table>
